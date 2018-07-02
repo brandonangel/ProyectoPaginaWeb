@@ -1,0 +1,24 @@
+{
+  "name": "crudfirebase",
+  "description": "CRUD con angular6, Bootstrap4, FontAwesome, Firebase",
+  "main": "",
+  "authors": [
+    "AngelDX <angel.condori@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "popper.js": "^1.14.3",
+    "jquery": "^3.3.1",
+    "bootswatch": "^4.1.1",
+    "components-font-awesome": "^5.0.6"
+  }
+}

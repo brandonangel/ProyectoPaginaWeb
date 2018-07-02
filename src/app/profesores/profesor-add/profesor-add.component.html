@@ -1,0 +1,35 @@
+<div class="card mt-3">
+  <div class="card-body">
+      <form #profesorForm="ngForm" (ngSubmit)="onSubmit(profesorForm)">
+          <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="profesorService.selectProfesor.$key">
+          <div class="form-group">
+            <input type="text" class="form-control" name="nombre" #name="ngModel"
+              [(ngModel)]="profesorService.selectProfesor.nombre"
+              placeholder="Nombre">
+          </div>
+          <div class="form-group">
+              <input type="text" class="form-control" name="apellido" #name="ngModel"
+                [(ngModel)]="profesorService.selectProfesor.apellido"
+               placeholder="Apellido">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="celular" #name="ngModel"
+              [(ngModel)]="profesorService.selectProfesor.celular"
+              placeholder="Celular">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="email" #name="ngModel"
+              [(ngModel)]="profesorService.selectProfesor.email"
+              placeholder="E-mail">
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit">
+                <i class="fas fa-plus-circle"></i> Agregar
+            </button>
+            <button class="btn btn-secondary" type="reset" (click)="resetForm(profesorForm)">
+                <i class="fas fa-sync-alt"></i> Resetear
+            </button>
+          </div>
+        </form>
+  </div>
+</div>
